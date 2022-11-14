@@ -23,7 +23,7 @@ const cli = meow(`
   }
 })
 
-async function main (cli) {
+async function main(cli) {
   let stream = process.stdin
   if (cli.input[0]) {
     stream = fs.createReadStream(cli.input[0])
